@@ -1,0 +1,54 @@
+body {
+    background-color: green;
+}
+
+.container {
+    margin-left: 25%;
+    display: flex;
+    position: relative;
+    top: 200px;
+    text-align: center;
+    width: 800px;
+    height: 800px;
+}
+
+kbd {
+    display: inline-block;
+    border-style: solid;
+    border-color: #545353;
+    font-size: 20px;
+}
+
+.white-keys kbd {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 100px;
+    height: 300px;
+}
+
+.black-keys kbd {
+    background-color: black;
+    justify-content: flex-start;
+    margin-right: 52px;
+    width: 50px;
+    height: 150px;
+    z-index: 1;
+}
+
+#KeyT {
+    margin-left: 100px;
+}
+
+.black-keys {
+    margin-left: 75px;
+    display: inline-flex;
+    position: absolute;
+    color: white;
+}
+
+.white-keys {
+    display: inline-flex;
+    position: absolute;
+    color: black;
+}
