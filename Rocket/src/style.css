@@ -1,0 +1,117 @@
+body {
+    background-color: black;
+}
+
+.space {
+    display: flex;
+    background-image: url("../images/space.png");
+    height: 100%;
+}
+
+.planet-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.planet {
+    max-width: 75%;
+    max-height: 75%;
+    z-index: 2;
+}
+
+.rocket {
+    max-width: 40%;
+    max-height: 40%;
+    position: absolute;
+    margin-left: 10%;
+    margin-bottom: 15%;
+    z-index: 1;
+    transform: rotate(30deg);
+}
+
+.control-panel_inner {
+    display: flex;
+    width: 90%;
+    background-color: black;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.control-panel {
+    position: relative;
+    background-image: linear-gradient(black, grey);
+    margin-left: 200px;
+    margin-top: 400px;
+    border-style: dashed solid;
+    border-left-style: dashed;
+    border-right-style: dashed;
+    border-color: yellow;
+    border-width: 10px;
+    height: 400px;
+}
+
+.check-buttons {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.levers {
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lever {
+    transform: rotate(-90deg);
+    width: 15%;
+}
+
+#ok {
+    background-color: yellow;
+}
+
+.password-place {
+    margin-left: 30%;
+    justify-self: center;
+}
+
+#password {
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-color: yellow;
+}
+
+#launch {
+    justify-self: center;
+    margin-top: 20%;
+    margin-left: 40%;
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: red;
+
+}
+
+.rocket-launch {
+    animation: change-rocket-place;
+    animation-duration: 2s;
+}
+
+@keyframes change-rocket-place {
+    from {
+        margin-left: 10%;
+        margin-bottom: 15%;
+    }
+    to {
+        margin-left: 20%;
+        margin-bottom: 100%;
+    }
+}
+

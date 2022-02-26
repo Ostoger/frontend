@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="rocket.js" defer></script>
+</head>
+<body>
+    <div class="space">
+        <div class="planet-area">
+            <img class="planet" src="../images/mars.png" alt="mars">
+            <img class="rocket" src="../images/rocket.png" alt="rocket">
+        </div>
+        <div class="control-panel">
+            <div class="control-panel__inner">
+                <div class="password-place">
+                    <input type="password" placeholder="Enter password to unlock" id="password">
+                    <input type="button" value="OK" id="ok">
+                </div>
+                <div class="check-buttons">
+                    <input type="checkbox" onchange="checkButtonState()" disabled>
+                    <input type="checkbox" onchange="checkButtonState()" disabled>
+                    <input type="checkbox" onchange="checkButtonState()" disabled>
+                    <input type="checkbox" onchange="checkButtonState()" disabled>
+                    <input type="checkbox" onchange="checkButtonState()" disabled>
+                    <input type="checkbox" onchange="checkButtonState()" disabled>
+                </div>
+                <div class="levers">
+                    <input class="lever" type="range" min="0" max="100" onchange="checkButtonState()" disabled>
+                    <input class="lever" type="range" min="0" max="100" onchange="checkButtonState()" disabled>
+                    <input class="lever" type="range" min="0" max="100" onchange="checkButtonState()" disabled>
+                    <input class="lever" type="range" min="0" max="100" onchange="checkButtonState()" disabled>
+                    <input class="lever" type="range" min="0" max="100" onchange="checkButtonState()" disabled>
+                </div>
+                <input type="button" value="launch" id="launch" disabled>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
